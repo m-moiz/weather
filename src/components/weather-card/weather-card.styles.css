@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+}
+
+html,
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 120%;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+.weather-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 25vw;
+	top: 10vh;
+	bottom: 10vh;
+	right: 25vw;
+}
+
+.card {
+	position: relative;
+	border-radius: 1.4rem;
+	font-size: 1rem;
+	padding: 110px 120px;
+	height: 30vh;
+	width: 20vw;
+	background-color: rgba(80, 89, 201, 0.4);
+	z-index: 2;
+}
+
+.container {
+	position: absolute;
+	left: 1.8rem;
+	top: 5.5rem;
+	width: 70%;
+}
+
+.element {
+	padding: .5rem .5rem;
+	font-size: .9rem;
+
+	color: white;
+	text-shadow: 1px 1px 9px white;
+}
+
+.current-weather {
+	padding: .5rem 0;
+	border-top-left-radius: 1.38rem;
+	border-top-right-radius: 1.4rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: white;
+	position: absolute;
+	top: .6rem;
+	left: .0001rem;
+	font-size: 1.3rem;
+	font-family: 'Indie Flower', cursive;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 6px white;
+}
+
+.next-button {
+	display: none;
+	font-family: 'Roboto', sans-serif;
+	width: 2rem;
+	position: absolute;
+	z-index: 6;
+	left: 80%;
+	border: none;
+	height: 1.2rem;
+	color: black;
+	border-radius: .5rem;
+
+	background: #00d2ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00d2ff, #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00d2ff, #3a7bd5);
+	-webkit-transition: transform .12s cubic-bezier(.54, .6, .73, .71);
+}
+
+.next-button:hover {
+	-webkit-transition: transform .12s cubic-bezier(.25, .79, .94, .92);
+	transform: translateY(3px);
+	background: #83a4d4; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #83a4d4, #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+.next-button.one {
+	top: 2rem;
+}
+
+.next-button.two {
+	top: 5.5rem;
+}
+
+.next-button.three {
+	top: 9.0rem;
+}
+
+.next-button.four {
+	top: 12.5rem;
+}
+
+.next-button.five {
+	top: 16.0rem;
+}
